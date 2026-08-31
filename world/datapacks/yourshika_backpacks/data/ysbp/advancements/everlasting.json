@@ -1,0 +1,1 @@
+{"parent":"ysbp:trash","display":{"icon":{"id":"minecraft:netherite_ingot"},"title":"Indestructible","description":"Install an Everlasting upgrade.","frame":"challenge","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}

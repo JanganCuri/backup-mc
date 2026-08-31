@@ -1,0 +1,13 @@
+{
+  "cpuName": "DO-Regular",
+  "cpuMicroarchitecture": "Broadwell (Server)",
+  "cpuVendorFreq": 2000000000,
+  "logicalCores": 2,
+  "physicalCores": 2,
+  "totalMemory": 4101832704,
+  "pageSize": 4096,
+  "memoryType": "RAM",
+  "diskCount": 2,
+  "partitionCount": 3,
+  "networkInterfaceCount": 2
+}

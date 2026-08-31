@@ -1,0 +1,1 @@
+{"parent":"ysbp:tier_copper","display":{"icon":{"id":"minecraft:iron_ingot"},"title":"Iron Hauler","description":"Open an Iron backpack.","frame":"goal","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}

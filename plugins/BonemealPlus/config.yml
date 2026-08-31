@@ -1,0 +1,79 @@
+allowed :
+  cactus : true
+  sugar_cane : true
+  vine : true
+
+  nether_wart : true
+  wheat : true
+  beetroot : true
+  carrots : true
+  potatoes : true
+  melon_stem : true
+  pumpkin_stem : true
+  cocoa : true
+  sweet_berry_bush : true
+  
+  duplicate-small-flowers : true
+  instant-bonemeal: false
+  dispenser-bonemeal : true
+  dispenser-plant: true
+  
+growth-settings :
+  bonemeal-luck: 0.3
+  super-growth-chance: 0.1
+
+max-growth :
+  vine_length : -1 # -1 means no limit, otherwise it will check for the length of the vine and only apply bonemeal if it's less than this value
+  cactus_hg : 3
+  sugar_cane_hg : 3
+  # do NOT exceed the max growth stages of the plants 
+  # eg.: nether wart has a max growth stage of 3
+  nether_wart_age : 3
+  wheat_age : 7
+  beetroot_age : 3
+  carrots_age : 7
+  potatoes_age : 7
+  melon_stem_age : 7
+  pumpkin_stem_age : 7
+  cocoa_age : 2
+  sweet_berry_bush_age : 3
+
+small-flowers:
+  - DANDELION
+  - POPPY
+  - BLUE_ORCHID
+  - ALLIUM
+  - AZURE_BLUET
+  - RED_TULIP
+  - ORANGE_TULIP
+  - WHITE_TULIP
+  - PINK_TULIP
+  - OXEYE_DAISY
+
+particle-settings: # The game chooses a random number between min and max for the particle effect amount
+  particle-enabled : true
+  particle-min : 14
+  particle-max : 18
+  particle-type : "VILLAGER_HAPPY"
+
+bonemeal-sound:
+    sound-enabled : true
+    sound-type : "ITEM_BONE_MEAL_USE"
+    sound-volume : 1.0
+    sound-pitch : 1.0
+
+worlds :
+  - world
+  - world_nether
+  - world_the_end
+
+aoe-bonemeal:
+  enabled: true
+  radius: 3
+  falloff: true
+
+performance:
+  max-growth-per-tick: 50
+  queue-system: true
+
+  

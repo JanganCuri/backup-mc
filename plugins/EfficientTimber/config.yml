@@ -1,0 +1,49 @@
+# EfficientTimber Configuration
+
+# If true, sneaking disables the plugin (lets you chop single logs).
+# Default: true
+sneak-enabled: true
+
+# Axe Damage
+# If false, breaking multiple logs at once only deals 1 damage.
+# Default: true
+axe-damage: true
+
+# Leaves further than this from the trunk won't be scanned by the main algorithm.
+# (Prevents massive lag in infinite forests).
+# Default: 10
+max-decay-distance: 10
+
+# Should the plugin run a "Cleanup" check for floating leaves?
+# This destroys leaves that are left floating in mid-air after the tree is cut.
+# Default: true
+break-floating-leaves: true
+
+# --- TOOLS ---
+# Comment out tools to disable them.
+allowed-tools:
+  - WOODEN_AXE
+  - STONE_AXE
+  - IRON_AXE
+  - GOLDEN_AXE
+  - DIAMOND_AXE
+  - NETHERITE_AXE
+
+# --- TREE TYPES ---
+# Comment out logs you want to protect (vanilla behavior).
+allowed-trees:
+  - OAK_LOG
+  - SPRUCE_LOG
+  - BIRCH_LOG
+  - JUNGLE_LOG
+  - ACACIA_LOG
+  - DARK_OAK_LOG
+  - MANGROVE_LOG
+  - CHERRY_LOG
+  - PALE_OAK_LOG
+
+
+# If true, leaf decay uses item pickup "pop" sound instead of grass break.
+# Players can override this with /et_settings if enabled in plugin logic.
+# Default: false
+bubble-sounds: false

@@ -1,0 +1,34 @@
+messages:
+  prefix: $8[$bSilkSpawners$8]
+  locale: en
+spawner:
+  dropChance: 100
+  destroyable: true
+  pickaxeRequired: true
+  silktouchRequired: true
+  silktouchLevel: 1
+  item:
+    name: $d{entity} Spawner
+    color: $e
+    prefixOld: []
+    lore:
+    - $7Spawns $e{entity}
+  explosion:
+    all: []
+    normal: []
+    silktouch: []
+  message:
+    denyDestroy: true
+    denyPlace: true
+    denyChange: true
+  permission:
+    disableDestroy: false
+    disablePlace: false
+    disableChange: false
+update:
+  configVersion: 4
+  check:
+    enabled: true
+    interval: 24
+hooks:
+  shopguiplus: true

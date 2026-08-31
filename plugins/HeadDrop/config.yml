@@ -1,0 +1,74 @@
+# Disable the first join message for the first player after server start
+show_first_join_message: true
+
+# Drop settings for PVP and PVE deaths
+drop_pvp: true
+drop_pve: true
+
+# Settings for head drops in specific dimensions
+drop_overworld: true
+drop_nether: true
+drop_end: true
+
+# Define weapons that trigger head drops (true = drop, false = no drop)
+weapon_selector:
+  sword: true
+  axe: true
+  trident: true
+  mace: true
+  bow: true
+  crossbow: true
+  pickaxe: true
+  shovel: true
+  hoe: true
+
+# Chance for a head to drop (0 = 0%, 1 = 100%, increments of 0.1)
+head_drop_chance: 1
+
+# Options to limit the number of heads dropped per player
+limit_head_drops_enabled: false
+max_heads_per_player: 5
+
+# Time in seconds for player heads to despawn. Max 5 minutes = 300 seconds
+head_despawn_time: 300
+
+# Enable or disable broadcasting a message when a player's head is dropped
+broadcast_head_drop: false
+# Use %player% to insert the name of the player whose head was dropped
+broadcast_message: "§c%player%'s§r§6 head has been dropped !§r"
+
+# Custom name for the dropped head item
+# Use %player% to insert the name of the player whose head was dropped
+head_name: "%player%'s Head"
+# Custom lore for the dropped head item. Can be empty
+head_lore: ""
+
+# Enable or disable the sound effect when the player's head drops
+play_sound_on_drop: false
+# Check the list of all sounds here : https://www.digminecraft.com/lists/sound_list_pc.php
+head_drop_sound: "entity.player.levelup"
+
+# Enable or disable particle effects when a player's head drops
+particles_enabled: false
+# Duration (in seconds) for particles around the dropped head. Set to "infinite" for no limit
+particles_duration: 10
+# Choose from : flame, heart, smoke ... Check the list of all particles here : https://minecraft.wiki/w/Particles_(Java_Edition)
+particle_type: "flame"
+
+# Enable or disable glowing effect on the dropped head
+glowing_enabled: false
+# Duration (in seconds) for the head to glow after being dropped. Set to "infinite" for no limit
+glowing_duration: 10
+# Color of the glowing effect (Allowed colors) :
+# - white
+# - yellow
+# - red
+# - orange
+# - blue
+# - green
+# - purple
+# - pink
+# - gray
+# - light_green
+# - light_blue
+glowing_color: "white"

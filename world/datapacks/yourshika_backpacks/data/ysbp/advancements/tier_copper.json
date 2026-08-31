@@ -1,0 +1,1 @@
+{"parent":"ysbp:first","display":{"icon":{"id":"minecraft:copper_ingot"},"title":"Copper Carrier","description":"Open a Copper backpack.","frame":"goal","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}

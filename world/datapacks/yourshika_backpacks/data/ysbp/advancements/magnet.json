@@ -1,0 +1,1 @@
+{"parent":"ysbp:pickup","display":{"icon":{"id":"minecraft:iron_nugget"},"title":"Magnetic","description":"Pull items in with a Magnet upgrade.","frame":"task","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}

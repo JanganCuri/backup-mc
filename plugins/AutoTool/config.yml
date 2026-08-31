@@ -1,0 +1,7 @@
+config_version: 1
+
+messages:
+  autotool_on: '&aAutotool enabled'
+  autotool_off: '&cAutotool disabled'
+autotool_disabled:
+- 73c18857-0944-315b-aae0-4ed32c6a9f0b

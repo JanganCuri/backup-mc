@@ -1,0 +1,1 @@
+{"parent":"ysbp:advanced","display":{"icon":{"id":"minecraft:crafting_table"},"title":"Swiss Army Pack","description":"Install 5 station upgrades in one backpack.","frame":"challenge","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}

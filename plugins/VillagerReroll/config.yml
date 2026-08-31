@@ -1,0 +1,30 @@
+# VillagerReroll Configuration
+
+# Cost to reroll trades (0 for free)
+# Players with villagerreroll.free permission bypass this
+reroll-cost: 0
+
+# Cooldown between rerolls in seconds (0 for no cooldown)
+cooldown: 5
+
+# Allow rerolling locked trades (villagers that have been traded with)
+allow-locked-reroll: true
+
+# GUI Settings
+gui:
+  title: "Villager Trade Reroller"
+  reroll-button-name: "§a§lReroll Trades"
+  reroll-button-lore:
+    - "§7Click to reset this villager's trades"
+    - "§7The villager will get new offers!"
+    - ""
+    - "§eCost: {cost} emeralds"
+
+# Messages
+messages:
+  no-permission: "§cYou don't have permission to reroll villager trades!"
+  no-villager: "§cNo villager found nearby! Right-click a villager first."
+  reroll-success: "§aVillager trades rerolled!"
+  not-enough-emeralds: "§cYou need {cost} emeralds to reroll!"
+  on-cooldown: "§cPlease wait {seconds} seconds before rerolling again!"
+  cannot-reroll-locked: "§cThis villager has been traded with and cannot be rerolled!"

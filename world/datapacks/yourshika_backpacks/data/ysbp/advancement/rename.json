@@ -1,0 +1,1 @@
+{"parent":"ysbp:dye","display":{"icon":{"id":"minecraft:name_tag"},"title":"Make it Yours","description":"Rename a backpack.","frame":"task","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}

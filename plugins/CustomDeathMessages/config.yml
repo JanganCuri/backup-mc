@@ -1,0 +1,67 @@
+# General configuration for the CustomDeathMessages plugin
+
+# Should death messages be shown to the player who died?
+message-to-victim: true
+
+# Should death messages be shown to other players in the world?
+message-to-world: true
+
+# Should death messages be shown to other players within a radius (in blocks)? If 0, this is ignored and 'message-to-world' is used.
+message-to-radius: 0
+
+# Should a sound be played when a player dies?
+# NOTE: If per-group sounds are defined in messages.yml, this is ignored for that group.
+play-sound-on-death: true
+death-sound: entity.player.death
+sound-volume: 1.0
+sound-pitch: 1.0
+
+# Should a particle effect be displayed when a player dies?
+play-particles-on-death: true
+death-particle: EXPLOSION
+particle-count: 50
+particle-offset-x: 0.5
+particle-offset-y: 0.5
+particle-offset-z: 0.5
+particle-extra: 0.1
+
+# Should the permission system be used for custom messages?
+use-permission-based-messages: false
+
+# Per-world custom messages (overrides group messages)
+per-world-messages:
+  world_nether:
+    default: "&4{victim} fue consumido por el Nether."
+  world_the_end:
+    default: "&5{victim} se desvaneció en el vacío eterno."
+
+# Visual effects on death
+play-title-on-death: false
+death-title: "&cYOU DIED"
+death-subtitle: "&7{cause}"
+
+play-actionbar-on-death: false
+death-actionbar: "&c{victim} died!"
+
+# Optional: Darken screen effect (simulated with smoke particles around player)
+play-darken-screen-effect: false
+darken-effect-duration-ticks: 20 # 1 second
+darken-effect-particle: CLOUD # CLOUD, SMOKE, ASH, etc.
+
+# Time format for {time} placeholder
+time-format: "HH:mm:ss"
+
+# Respawn message
+respawn-message-enabled: true
+respawn-message: "&a¡{player} has returned from the dead!"
+
+# === NEW FEATURES ===
+
+# Epic Death System
+epic-death-chance: 0.05 # Probability (0.0 to 1.0)
+# Cost System (requires Vault)
+cost-per-death-message: 0.0 # Set to 0.0 to disable
+exempt-groups-from-cost:
+  - "admin"
+# Legacy Support
+legacy-color-support: false # Set to true for MC < 1.16

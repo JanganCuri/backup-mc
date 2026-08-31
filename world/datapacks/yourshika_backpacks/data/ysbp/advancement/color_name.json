@@ -1,0 +1,1 @@
+{"parent":"ysbp:rename","display":{"icon":{"id":"minecraft:firework_rocket"},"title":"Fabulous","description":"Give a backpack a colored or gradient name.","frame":"task","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}

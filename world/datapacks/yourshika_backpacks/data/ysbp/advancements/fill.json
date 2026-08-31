@@ -1,0 +1,1 @@
+{"parent":"ysbp:collector","display":{"icon":{"id":"minecraft:bundle"},"title":"Hoarder","description":"Completely fill a backpack's storage.","frame":"challenge","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}

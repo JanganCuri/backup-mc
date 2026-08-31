@@ -1,0 +1,35 @@
+# DailyAutoRestart Configuration
+# Timezone (Asia/Jakarta = WIB, GMT+7)
+timezone: "Asia/Jakarta"
+
+# Jadwal restart otomatis (format 24-jam HH:mm)
+# Server akan restart otomatis setiap jam ini setiap hari
+restart-times:
+  - "04:00" # Jam 4 Pagi WIB (Waktu ideal saat player sepi/tidur)
+
+# Peringatan hitung mundur sebelum restart (dalam detik)
+# Contoh: 600 = 10 menit, 300 = 5 menit, 60 = 1 menit
+countdown-warnings:
+  - 600
+  - 300
+  - 60
+  - 30
+  - 10
+  - 5
+  - 4
+  - 3
+  - 2
+  - 1
+
+# Kustomisasi Pesan & Popup di Layar
+messages:
+  # Title besar di tengah layar
+  title: "<red><bold>SERVER RESTART</bold></red>"
+  # Subtitle di bawah title
+  subtitle: "<yellow>Restart dalam <red><bold>%time%</bold></red>! Cari tempat aman.</yellow>"
+  # Pesan di kotak chat
+  chat: "<gradient:#FF416C:#FF4B2B><bold>[SERVER]</bold></gradient> <yellow>Server akan restart otomatis dalam <red><bold>%time%</bold></red>. Mohon amankan barang Anda!</yellow>"
+  # Teks Actionbar di atas hotbar
+  actionbar: "<gold>⚡ Server Restart dalam: <red><bold>%time%</bold></red></gold>"
+  # Pesan saat player di-kick ketika restart dimulai
+  kick-message: "<red><bold>SERVER SEDANG RESTART HARIAN</bold></red>\n\n<yellow>Server sedang melakukan pemeliharaan & backup otomatis.\n<green>Silakan join kembali dalam 1-2 menit!</green></yellow>"

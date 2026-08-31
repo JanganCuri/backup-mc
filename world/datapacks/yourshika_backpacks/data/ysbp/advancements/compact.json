@@ -1,0 +1,1 @@
+{"parent":"ysbp:furnace","display":{"icon":{"id":"minecraft:piston"},"title":"Compactor","description":"Compact items into blocks.","frame":"task","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}

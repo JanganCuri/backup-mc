@@ -1,0 +1,50 @@
+# #####################################################################
+#               This is the pet configuration of MyPet                #
+#                 You can find more info on the wiki:                 #
+#   https://wiki.mypet-plugin.de/setup/configurations/pet-config.yml  #
+# #####################################################################
+
+MyPet:
+  Pets:
+    Bat:
+      CanGlide: true
+    Blaze:
+      CanGlide: true
+    Ghast:
+      CanGlide: true
+    Chicken:
+      CanGlide: true
+      CanLayEggs: true
+      GrowUpItem: experience_bottle
+    EnderDragon:
+      CanGlide: true
+    Cow:
+      CanGiveMilk: true
+      GrowUpItem: experience_bottle
+    IronGolem:
+      CanTossUp: true
+    Snowman:
+      FixSnowTrack: true
+    Horse:
+      GrowUpItem: bread
+    Mooshroom:
+      GrowUpItem: experience_bottle
+      CanGiveStew: false
+    Ocelot:
+      GrowUpItem: experience_bottle
+    Pig:
+      GrowUpItem: experience_bottle
+    PigZombie:
+      GrowUpItem: experience_bottle
+    Sheep:
+      CanBeSheared: true
+      CanRegrowWool: true
+      GrowUpItem: experience_bottle
+    Villager:
+      GrowUpItem: experience_bottle
+    Wolf:
+      GrowUpItem: experience_bottle
+    Wither:
+      CanGlide: true
+    Zombie:
+      GrowUpItem: experience_bottle

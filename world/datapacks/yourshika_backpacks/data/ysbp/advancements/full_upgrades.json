@@ -1,0 +1,1 @@
+{"parent":"ysbp:stations","display":{"icon":{"id":"minecraft:anvil"},"title":"Fully Loaded","description":"Fill every upgrade slot of a backpack.","frame":"challenge","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}

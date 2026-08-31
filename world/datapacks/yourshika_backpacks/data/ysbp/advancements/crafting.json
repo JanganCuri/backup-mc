@@ -1,0 +1,1 @@
+{"parent":"ysbp:ender","display":{"icon":{"id":"minecraft:crafting_table"},"title":"On the Go","description":"Open a crafting grid from a backpack.","frame":"task","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}

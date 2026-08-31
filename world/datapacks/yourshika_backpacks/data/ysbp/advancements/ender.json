@@ -1,0 +1,1 @@
+{"parent":"ysbp:root","display":{"icon":{"id":"minecraft:ender_chest"},"title":"Pocket Dimension","description":"Open your ender chest from a backpack.","frame":"task","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}

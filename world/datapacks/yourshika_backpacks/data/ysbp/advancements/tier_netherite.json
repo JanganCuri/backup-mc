@@ -1,0 +1,1 @@
+{"parent":"ysbp:tier_emerald","display":{"icon":{"id":"minecraft:netherite_ingot"},"title":"Endgame","description":"Open a Netherite backpack.","frame":"challenge","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}

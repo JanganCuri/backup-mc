@@ -1,0 +1,131 @@
+# Custom death messages.
+# Use & for Minecraft colors (e.g., &a = green, &c = red).
+# Use <#rrggbb> for hexadecimal colors (requires Spigot 1.16+).
+# Supported placeholders:
+# {victim} - Name of the player who died.
+# {killer} - Name of the killer (if any).
+# {cause} - Technical cause of death.
+# {world} - World where the death occurred.
+# {x}, {y}, {z} - Coordinates of the death.
+# {time} - Server time.
+# {player} - For respawn message.
+# {error} - For error messages.
+# {causes} - For list of valid causes.
+# {victim_weapon} - Weapon held by the victim (if any).
+# {victim_effects} - Active potion effects on the victim (if any).
+# You can add more placeholders via PlaceholderAPI.
+# If 'use-permission-based-messages' is true in config.yml, you can create groups with custom messages.
+
+# === EPIC DEATH MESSAGES ===
+epic-messages:
+  - "&6&l!!! EPIC DEATH !!! &e{victim} &6was annihilated by &e{killer}&6!"
+  - "&4&l!!! APOCALYPSE !!! &c{victim} &4vanished from the map by &c{killer}&4!"
+  - "&5&l!!! FINAL FANTASY !!! &d{victim} &5succumbed to the power of &d{killer}&5!"
+
+# === CONDITIONAL MESSAGES EXAMPLE ===
+default:
+  messages:
+    ENTITY_ATTACK:
+      - condition: "{victim_weapon} contains 'DIAMOND'"
+        message: "&c{victim} &4was slain while wielding a mighty Diamond Sword by &c{killer}&4!"
+      - condition: "{victim_effects} contains 'POISON'"
+        message: "&c{victim} &2succumbed to poison after being attacked by &c{killer}&2!"
+      - default: "&c{victim} &4was massacred by &c{killer}&4."
+
+# === SYSTEM MESSAGES (Used by commands, logs, and internal operations) ===
+system-messages:
+  plugin-enabled: "[CustomDeathMessages] Plugin loaded successfully."
+  plugin-disabled: "[CustomDeathMessages] Plugin disabled."
+  reload-success: "&a[CustomDeathMessages] Configuration reloaded successfully."
+  reload-failure: "&c[CustomDeathMessages] Error reloading: {error}"
+  no-permission-reload: "&cYou do not have permission to reload the configuration."
+  no-permission-test: "&cYou do not have permission to use this command."
+  no-permission-bypass: "&cYou do not have permission to bypass death messages."
+  players-only: "&cOnly players can use this command."
+  usage-test: "&cUsage: /cdm test <cause>"
+  specify-cause: "&cSpecify a cause: FALL, FIRE, ENTITY_ATTACK, etc."
+  invalid-cause: "&cInvalid cause. Use: {causes}"
+  test-message-prefix: "&a[Test Message] &f"
+  config-invalid-sound: "Invalid sound '{sound_name}'. Using default: ENTITY_PLAYER_DEATH."
+  config-invalid-particle: "Invalid particle '{particle_name}'. Using default: EXPLOSION."
+  config-invalid-darken-particle: "Invalid darken particle '{particle_name}'. Using default: CLOUD."
+  message-not-found: "No message found for world: {world_name} or group/cause. Using hardcoded default."
+  papi-error: "PlaceholderAPI detected but class not found. Is it properly installed?"
+
+  # === HELP SYSTEM ===
+  help-title: "&6=== CustomDeathMessages Help (Page {current_page}/{total_pages}) ==="
+  help-command-description-reload: "&a/cdmreload &7- Reloads the plugin configuration."
+  help-command-description-test: "&a/cdm test <cause> [...] &7- Tests death messages."
+  help-command-description-help: "&a/cdm help [page] &7- Shows this help."
+  help-permission-description-reload: "&a cdm.reload &7- Permission for /cdmreload."
+  help-permission-description-test: "&a cdm.test &7- Permission for /cdm test."
+  help-permission-description-bypass: "&a cdm.bypass &7- Bypasses death messages."
+  help-placeholder-victim: "&a {victim} &7- Victim's name."
+  help-placeholder-killer: "&a {killer} &7- Killer's name."
+  help-placeholder-cause: "&a {cause} &7- Technical cause of death."
+  help-placeholder-world: "&a {world} &7- World name."
+  help-placeholder-coords: "&a {x}, {y}, {z} &7- Death coordinates."
+  help-placeholder-time: "&a {time} &7- Server time."
+  help-placeholder-weapon: "&a {victim_weapon} &7- Weapon in main hand."
+  help-placeholder-helmet: "&a {victim_helmet} &7- Helmet equipped."
+  help-placeholder-effects: "&a {victim_effects} &7- Active potion effects."
+  help-placeholder-cost: "&a {cost} &7- Cost of the death message."
+  help-configuration-conditional: "&a  - condition: \"...\" &7- Conditional message syntax."
+  help-configuration-epic: "&a epic-death-chance: 0.05 &7- Chance for epic death in config.yml."
+  help-configuration-cost: "&a cost-per-death-message: 10.0 &7- Cost per message in config.yml."
+  help-support: "&e Use &a/cdm test &e to experiment."
+
+  # === EPIC DEATH EFFECTS ===
+  epic-sound: "ENTITY_LIGHTNING_BOLT_THUNDER"
+  epic-particle: "EXPLOSION_EMITTER"
+  epic-particle-count: 100
+  epic-title: "&6&lEPIC DEATH!"
+  epic-subtitle: "&e{victim} died in style!"
+
+  # === ECONOMY ===
+  economy-cost-message: "&c${cost} &7has been deducted from your account."
+  economy-insufficient-funds: "&cYou cannot afford the death message cost (${cost})."
+  economy-exempt-message: "&7(Exempt from cost)"
+
+# === GROUP: default (regular players) ===
+default:
+  # Optional: Override global sound settings
+  # death-sound: ENTITY_PLAYER_HURT
+  # sound-volume: 0.8
+  # sound-pitch: 0.9
+  # Default message for this group (can be string or list)
+  default: 
+    - "&c{victim} has met their end!"
+    - "&4{victim} just became a statistic."
+  # Specific messages by cause
+  messages:
+    ENTITY_ATTACK: 
+      - "&c{victim} &4was massacred by &c{killer}&4."
+      - "&4&lBRUTAL! &c{killer} &4eliminated &c{victim}&4."
+    FALL:
+      - "&c{victim} fell to their doom!"
+      - "&c{victim} forgot how to fly."
+      - "&c{victim} took gravity personally."
+    FIRE: "&c{victim} &4turned into a human torch."
+
+# === GROUP: vip ===
+vip:
+  death-sound: entity.player.levelup
+  sound-volume: 1.2
+  sound-pitch: 1.5
+  default: 
+    - "&6✧ &e{victim} has fallen! &6✧"
+    - "&6✧ &eRIP &e{victim} &6✧"
+  messages:
+    FALL: 
+      - "&6✧ &e{victim} &6✧ &emade a forced landing."
+      - "&6✧ &e{victim} &6✧ &etried skydiving without a parachute."
+
+# === GROUP: admin ===
+admin:
+  death-sound: entity.wither.spawn
+  sound-volume: 2.0
+  sound-pitch: 0.8
+  default: "&4[ADMIN] &c{victim} has died. Cause: {cause}"
+  messages:
+    ENTITY_ATTACK: "&4[ADMIN] &c{victim} &4was eliminated by &c{killer} &4({cause})"

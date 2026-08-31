@@ -1,0 +1,18 @@
+language: en
+enabled: true
+decay-delay-ticks: 2
+search-radius: 7
+require-log-break: true
+enable-drops: true
+batch-size: 16
+
+animation:
+  particles: true
+  particles-count: 12
+  sounds: true
+  sound-volume: 0.28
+  rustle-sound: true
+  slowdown-in-leaves: true
+
+fortune-affects-leaves: true
+update-checker: true

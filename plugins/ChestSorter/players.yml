@@ -1,0 +1,48 @@
+# Player-specific ChestSorter settings
+# This file stores per-player preferences
+# Format:
+# <uuid>:
+#   enabled: true/false
+#   has-seen-welcome: true/false
+#   default-sort-type: NAME/QUANTITY/MATERIAL_TYPE/DURABILITY
+
+00000000-0000-0000-0009-01fb83def51e:
+  enabled: true
+  has-seen-welcome: true
+  default-sort-type: NAME
+  default-sort-order: ASC
+73c18857-0944-315b-aae0-4ed32c6a9f0b:
+  enabled: true
+  has-seen-welcome: true
+  default-sort-type: NAME
+  default-sort-order: ASC
+9ce14de1-3443-3564-ad6e-f961ec89e05d:
+  enabled: true
+  has-seen-welcome: true
+  default-sort-type: NAME
+  default-sort-order: ASC
+014ffb4d-1cf6-3650-aba1-40f9118d9451:
+  enabled: true
+  has-seen-welcome: true
+  default-sort-type: NAME
+  default-sort-order: ASC
+9707124b-3763-3e21-943c-4ff18c6c54f0:
+  enabled: true
+  has-seen-welcome: true
+  default-sort-type: NAME
+  default-sort-order: ASC
+2fe7e2bc-14bd-30b9-a320-55d7e9f8569b:
+  enabled: true
+  has-seen-welcome: true
+  default-sort-type: NAME
+  default-sort-order: ASC
+6ee94759-c005-3d5d-a79e-5c80b33c4827:
+  enabled: true
+  has-seen-welcome: true
+  default-sort-type: NAME
+  default-sort-order: ASC
+96ec3f50-7b03-3f16-b369-22e990f1889c:
+  enabled: true
+  has-seen-welcome: true
+  default-sort-type: NAME
+  default-sort-order: ASC

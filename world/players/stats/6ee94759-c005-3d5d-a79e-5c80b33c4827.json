@@ -1,0 +1,84 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:furnace": 1,
+      "minecraft:stone_sword": 1,
+      "minecraft:stick": 8,
+      "minecraft:wooden_pickaxe": 1,
+      "minecraft:stone_shovel": 1,
+      "minecraft:stone_axe": 1,
+      "minecraft:oak_planks": 24,
+      "minecraft:stone_pickaxe": 1,
+      "minecraft:crafting_table": 1
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 2,
+      "minecraft:skeleton": 1,
+      "minecraft:pig": 1,
+      "minecraft:spider": 1
+    },
+    "minecraft:mined": {
+      "minecraft:oak_leaves": 79,
+      "minecraft:crafting_table": 2,
+      "minecraft:leaf_litter": 4,
+      "minecraft:oak_log": 40,
+      "minecraft:grass_block": 3,
+      "minecraft:stone": 18
+    },
+    "minecraft:used": {
+      "minecraft:stone_axe": 52,
+      "minecraft:rotten_flesh": 2,
+      "minecraft:stone_sword": 36,
+      "minecraft:leaf_litter": 3,
+      "minecraft:crafting_table": 3,
+      "minecraft:apple": 1,
+      "minecraft:wooden_pickaxe": 14,
+      "minecraft:oak_sapling": 12,
+      "minecraft:stone_pickaxe": 4,
+      "minecraft:dirt": 3
+    },
+    "minecraft:dropped": {
+      "minecraft:wooden_pickaxe": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:porkchop": 2,
+      "minecraft:dirt": 12,
+      "minecraft:wooden_pickaxe": 1,
+      "minecraft:stick": 7,
+      "minecraft:cobblestone": 18,
+      "minecraft:player_head": 1,
+      "minecraft:crafting_table": 3,
+      "minecraft:oak_sapling": 15,
+      "minecraft:rotten_flesh": 3,
+      "minecraft:apple": 1,
+      "minecraft:leaf_litter": 5,
+      "minecraft:string": 2,
+      "minecraft:oak_log": 40,
+      "minecraft:spider_eye": 1
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 7,
+      "minecraft:time_since_rest": 146,
+      "minecraft:walk_one_cm": 39171,
+      "minecraft:leave_game": 5,
+      "minecraft:mob_kills": 5,
+      "minecraft:damage_taken": 540,
+      "minecraft:play_time": 13934,
+      "minecraft:damage_dealt": 977,
+      "minecraft:jump": 135,
+      "minecraft:time_since_death": 126,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 49398,
+      "minecraft:fall_one_cm": 2150,
+      "minecraft:total_world_time": 13934,
+      "minecraft:fly_one_cm": 15219,
+      "minecraft:walk_on_water_one_cm": 3706,
+      "minecraft:deaths": 2
+    },
+    "minecraft:killed_by": {
+      "minecraft:creeper": 1,
+      "minecraft:zombie": 1
+    }
+  },
+  "DataVersion": 4903
+}

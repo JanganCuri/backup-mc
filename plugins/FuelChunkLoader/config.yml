@@ -1,0 +1,16 @@
+# Maximum chunk loaders a player can have active at once
+max-loaders-per-player: 3
+
+# Fuel configuration: Uses standard furnace fuels (Coal, Charcoal, Coal Block, Lava, etc.)
+levels:
+  iron:
+    radius: 0
+    fuel-multiplier: 1
+
+  gold:
+    radius: 1
+    fuel-multiplier: 2
+
+  diamond:
+    radius: 2
+    fuel-multiplier: 4

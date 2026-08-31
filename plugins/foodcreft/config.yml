@@ -1,0 +1,2097 @@
+# FoodCreft config
+# Admins can edit/add/remove custom food heads here.
+# texture accepts Minecraft-Heads Base64 Value, texture hash, or textures.minecraft.net URL.
+# Recipes are editable too. Use Bukkit/Spigot material names for ingredients.
+# Do NOT use minecraft-heads.com/custom-heads/head/... page links here.
+settings:
+  gui-title: "&8FoodCreft Foods"
+  recipe-menu-title: "&cRecipe: &6%food% &8(%page%/%pages%)"
+  gui-size: 54
+  consume-cooldown-seconds: 1
+  consume-sound: "ENTITY_PLAYER_BURP"
+  only-eat-when-low-hunger: true
+
+messages:
+  not-hungry: "&cYou are not hungry enough to eat this."
+
+foods:
+  burger:
+    enabled: true
+    slot: 0
+    display-name: "&eBurger"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVmNTU1MzZiYzdlMDIzYWU3MDY5ZWQ3YzQ0NWI0ZDU5ZmM4YzJjNDlhN2U4ZWFhNTkyMzEyODJlOWZiZjRkMSJ9fX0="
+    hunger: 9
+    saturation: 7.2
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a9+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - 'BBB'
+        - 'BCB'
+        - 'BBB'
+      ingredients:
+        B: BREAD
+        C: COOKED_BEEF
+
+  hot_dog:
+    enabled: true
+    slot: 1
+    display-name: "&eHot Dog"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY2ZmJmY2NiYWVlZjgxZTY4NWU5NDEwNTBlYThmYmQyMzQxMWMzOGNlMDFkZjJkYWVlYzk0ZDQ1MjFlNzczZCJ9fX0="
+    hunger: 8
+    saturation: 6.0
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a8+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' B '
+        - 'BPB'
+        - ' B '
+      ingredients:
+        B: BREAD
+        P: COOKED_PORKCHOP
+
+  fries:
+    enabled: true
+    slot: 2
+    display-name: "&eFries"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmM5YmJjZWIxOWE2YTJkZmExNTNmNjVmYjIyMTA3OTkyNWUzYmVjZWUxYTRhMWVkYzQyNWZhMDJkODQ3MTBkNyJ9fX0="
+    hunger: 5
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a5+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' P '
+        - ' P '
+        - ' B '
+      ingredients:
+        P: BAKED_POTATO
+        B: PAPER
+
+  apple_pie:
+    enabled: true
+    slot: 3
+    display-name: "&eApple Pie Slice"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQxOGM2YjBhMjlmYzFmZTc5MWM4OTc3NGQ4MjhmZjYzZDJhOWZhNmM4MzM3M2VmM2FhNDdiZjNlYjc5In19fQ=="
+    hunger: 7
+    saturation: 6.0
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a7+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - 'AAA'
+        - 'SWS'
+        - 'WWW'
+      ingredients:
+        A: APPLE
+        S: SUGAR
+        W: WHEAT
+
+  pancakes:
+    enabled: true
+    slot: 4
+    display-name: "&ePancakes"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA2ZmZmNjcyNTZmNDA3Njc5ODYwOGNlYTRkYjU3NmUyZDMxZWIyMGVkNDYxYzI2MWE3NDYzZWIyMzdjMGY3NiJ9fX0="
+    hunger: 4
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a4+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: WHEAT
+        B: COOKIE
+
+  pancakes_plate:
+    enabled: true
+    slot: 5
+    display-name: "&ePancakes Plate"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg0NTE2NjgzOTIwMjJhM2Y3NzgzM2M4NDFjMmIzMTc4Y2UxMWE5Yzk3NTA0NjFlNTFkZmExMmUwMWMzYjFiNyJ9fX0="
+    hunger: 5
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a5+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: APPLE
+        B: MELON_SLICE
+
+  warm_apple_pie:
+    enabled: true
+    slot: 6
+    display-name: "&eWarm Apple Pie"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjMwZWUyMzcyOTBkYmExMzNkYTAxYWY1Zjg4Yjg3Y2NlM2I5NGJjNDBjNTA4OWU5ODg4NTJkNDc4ZmExNTRhMiJ9fX0="
+    hunger: 4
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a4+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: SUGAR
+        B: BEETROOT
+
+  muffin_apple_pie:
+    enabled: true
+    slot: 7
+    display-name: "&eMuffin Apple Pie"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWEyZTdlZDkwZjY0MTM2Mzk4NDQwMTFiYmUyNjYxODlhMzg1ZDk4ZDVjZThjNWY4ZmFlM2MzNzgwMDJjY2VjZiJ9fX0="
+    hunger: 4
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a4+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: COOKIE
+        B: BLUE_ICE
+
+  bread:
+    enabled: true
+    slot: 8
+    display-name: "&eBread"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmFhOWU3OTcyNjVkMzhhYmMwMjg1NjgzNGUzN2Y2MzZmZTMxNmZlZWI1NWE0YTBkZjA1MmFjMmZmZWE0NmY5OSJ9fX0="
+    hunger: 10
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a10+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: CAKE
+        B: APPLE
+
+  wildberry_pie:
+    enabled: true
+    slot: 9
+    display-name: "&eWildberry Pie"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA0NzcxMzRkMmFjNTI1NjlmMDYyNzA3YjA0ZTRhMzdhNzBhOWZlZDYxMTBjN2QyZjE0NWY3NmJlMWNkODI2ZSJ9fX0="
+    hunger: 9
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a9+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: BREAD
+        B: CARROT
+
+  honey_jar:
+    enabled: true
+    slot: 10
+    display-name: "&eHoney Jar"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjkwNmJmZDgxN2NjNTgxOGM3NjIwZTI4OGY0ZTQxMzAxNDMxOGMwYmNiYjVlY2Q2ZGE4YTU5MjNkNTFjNTJmMiJ9fX0="
+    hunger: 8
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a8+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: POTATO
+        B: COCOA_BEANS
+
+  cup_of_milk:
+    enabled: true
+    slot: 11
+    display-name: "&eCup Of Milk"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzg2ZmViNzI4MDE4NGRkNjBhOWRlZTJlNThlMzFhNWI1ZjczZTg2ZTUzODg0Y2VkZjgwYmJmODVhNDhhYWM0ZCJ9fX0="
+    hunger: 7
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a7+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: BAKED_POTATO
+        B: SNOWBALL
+
+  hot_chocolate:
+    enabled: true
+    slot: 12
+    display-name: "&eHot Chocolate"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc3MzllNjUzZmY2MjNlYTlkZDQ3OWI1NmZmYmRmN2Y4ZDQyZGY2MDVjNGYyZDVmMTVkNTVkYTRiMmM4OGY0NSJ9fX0="
+    hunger: 4
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a4+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: CARROT
+        B: YELLOW_DYE
+
+  coffee_mug:
+    enabled: true
+    slot: 13
+    display-name: "&eCoffee Mug"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTM2N2FhOTIwMjM1NmZkNmQ1NmQ4ZjM0MWVjZTY3N2Y5YjExMjhiYmVkYzU5MDEzYzc4ZGU2NmM4NjQ0NmUyOSJ9fX0="
+    hunger: 3
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a3+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: GOLDEN_CARROT
+        B: POTATO
+
+  milk_tea:
+    enabled: true
+    slot: 14
+    display-name: "&eMilk Tea"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDZkOTFkM2RiZmJjMDFkN2JkNGE4NjkxZjkzZDdmOTZkNGE1ZDJiYmQzZTE2ZmFhOGVjN2MyZTU4YzQ5MDdiZCJ9fX0="
+    hunger: 4
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a4+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: MELON_SLICE
+        B: HONEY_BOTTLE
+
+  grape_koolaid:
+    enabled: true
+    slot: 15
+    display-name: "&eGrape Koolaid"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDM3ZjYxN2M3M2U4MDVjZWEyZTczNjI0MWUxMzQzY2ExYTZkMTFjNjIxNmJmMTZmMzUyODdmZjY4ZGRlZmQ0MCJ9fX0="
+    hunger: 4
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a4+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: SWEET_BERRIES
+        B: GLASS_BOTTLE
+
+  grape:
+    enabled: true
+    slot: 16
+    display-name: "&eGrape"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjdlMzE2M2QyMTM3MDFhYWMwNjFkMDhlMzNiOTE1ZWYyZTEwZjUxNDI2MzMyY2VhNzU2ZjA3ZTkyY2JiMzU1YyJ9fX0="
+    hunger: 2
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a2+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: GLOW_BERRIES
+        B: PURPLE_DYE
+
+  coconut_drink:
+    enabled: true
+    slot: 17
+    display-name: "&eCoconut Drink"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQxMGMzNzg5ODhkMWJmY2U5YzE0MDRlNDA1OWE5OWM2MTZiMzMxMGJlYzU4OGNjMmEzZTNiOTcwNzBiMGQ1NSJ9fX0="
+    hunger: 9
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a9+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: HONEY_BOTTLE
+        B: CAKE
+
+  sunset_tropical_drink:
+    enabled: true
+    slot: 18
+    display-name: "&eSunset Tropical Drink"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDM0N2ZlZDFjNWY4ZjkxYzkwZTU2ZTdhMGEwNzQ0YjdkYzhjNDg1MGY3NDVkNmZhYTAxN2E2OWI0M2IwNTQyMSJ9fX0="
+    hunger: 2
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a2+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: MILK_BUCKET
+        B: SWEET_BERRIES
+
+  gatorade_rain_berry:
+    enabled: true
+    slot: 19
+    display-name: "&eGatorade Rain Berry"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNhMDg3ODY1ZmYwNTA5ZjExNmRiMmE3M2ZkZjZhOGUyYmE4MGQ2ODA4ZDk0ZmQ4N2NmZjI3MzNlYzg5YjJkYiJ9fX0="
+    hunger: 10
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a10+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: COCOA_BEANS
+        B: DRIED_KELP
+
+  gatorade_strawberry:
+    enabled: true
+    slot: 20
+    display-name: "&eGatorade Strawberry"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFkZDYxYWMwMzJjN2RmNGQwMTQxYTVjNWMzNTRmMTg3ZDYxZjkzNGY4ZWM4ZjkxOTI4ODUyZmM2ODNkYmI4NiJ9fX0="
+    hunger: 8
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a8+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: PUMPKIN_PIE
+        B: ORANGE_DYE
+
+  gatorade_riptide_rush:
+    enabled: true
+    slot: 21
+    display-name: "&eGatorade Riptide Rush"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODEyNjc1OWIxYTAyNDNjZmU0ODBjYzJhMzNiN2YwMDkzN2RlMjAxYjRkOWU4MDk5YmNiZWM4OTg0YjkzNTA3ZSJ9fX0="
+    hunger: 8
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a8+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: BEETROOT
+        B: SUGAR
+
+  gatorade_fierce_grape:
+    enabled: true
+    slot: 22
+    display-name: "&eGatorade Fierce Grape"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzkwMDkyYmJhMTI4ODM0NjBkNDNlZWUwNzliMWVjYTY2MDgxNTU2MGI2NGQ5NDY0ODBlYTViNmE3OGVlOTI1ZSJ9fX0="
+    hunger: 2
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a2+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: DRIED_KELP
+        B: GOLDEN_CARROT
+
+  gatorade_cool_blue:
+    enabled: true
+    slot: 23
+    display-name: "&eGatorade Cool Blue"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDdjMTA5MTRmNzNhNmE1NjVjNTViOWVlZjYxYjEzNTQzNTFlNTUwYjA0ZDUwMTkzODI3MjE4ZmRiYmE2NDUxYSJ9fX0="
+    hunger: 7
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a7+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: BOWL
+        B: PUMPKIN_PIE
+
+  gatorade_glacier_freeze:
+    enabled: true
+    slot: 24
+    display-name: "&eGatorade Glacier Freeze"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTZhZjM1NzQ0ZWJmOTBmOWYxYWI5NDlmMjQ4ZDhhZjAwYWJkMzBhZGE2YzFmNThlZDg0NzhjYmQwNDc0NTZiOSJ9fX0="
+    hunger: 3
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a3+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: GLASS_BOTTLE
+        B: ICE
+
+  gatorade_orange:
+    enabled: true
+    slot: 25
+    display-name: "&eGatorade Orange"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc4NDg4YWU1YTU2OWU1ZjZmNzc0MzVhY2E1ZDBkNjI3NzZjOTExZjQ5MTkwOWQ1NjU4MGE5NzZmZmFkMWQ4NCJ9fX0="
+    hunger: 6
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a6+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: PAPER
+        B: WHEAT
+
+  gatorade_fruit_punch:
+    enabled: true
+    slot: 26
+    display-name: "&eGatorade Fruit Punch"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmEwMzUzNTEyNDRlODlhN2VhYzc0NzgxZGQ5MzJkMzljMmNiZjljMzFmYjhjZDcwODg4NTNlODRmMTAyM2Y0In19fQ=="
+    hunger: 7
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a7+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: SNOWBALL
+        B: BAKED_POTATO
+
+  gatorade_lime_cucumber:
+    enabled: true
+    slot: 27
+    display-name: "&eGatorade Lime Cucumber"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTVmMTE0ZTM4NmY5OTlmNTVjOTNhMWU5OTJiODdjNGYyNDBiODBlNGQ3ZDU5NGU0MGUzMTY0ODYxNjI0MDYwMCJ9fX0="
+    hunger: 2
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a2+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: ICE
+        B: MILK_BUCKET
+
+  gatorade_lemon_lime:
+    enabled: true
+    slot: 28
+    display-name: "&eGatorade Lemon Lime"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdmYzA4ZjRkNmVjYjQ0MGJmOWQwMTNhYWQ2YTc3MDQ2ZmYzYzc1ZjY3YWViMDA5Y2U2OWRiMTI2MzVmYTQ5OCJ9fX0="
+    hunger: 4
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a4+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: BLUE_ICE
+        B: PAPER
+
+  melon_purple_plate:
+    enabled: true
+    slot: 29
+    display-name: "&eMelon Purple Plate"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTU1ZjMwOWY5ZDA3NDFmZTRhZDg3NmUyYmFmMmRmMmY0ZjhkNmNjMzU4M2EzODZjNjQ5YTRlNmQ2YmMwM2JjMSJ9fX0="
+    hunger: 10
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a10+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: ORANGE_DYE
+        B: LIME_DYE
+
+  melon_blue_plate:
+    enabled: true
+    slot: 30
+    display-name: "&eMelon Blue Plate"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzJiMjQ3ZjQwOWI2ZmY4MmI3NmY4Njk5NzhhY2U3NjQ5NDVjYjAzYjU4ODg3NzU2NGViMTkzMjgwZDBkZjYzZiJ9fX0="
+    hunger: 9
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a9+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: PINK_DYE
+        B: BREAD
+
+  melon_green_plate:
+    enabled: true
+    slot: 31
+    display-name: "&eMelon Green Plate"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQ5Nzk1NmEzNWFhNjhkZmRlZjgwYzJjOThlYmJiOThmOTM0OGQzYTg3NTA3NDgyYjhjYzBjZWFiMDJhNDllMyJ9fX0="
+    hunger: 4
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a4+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: PURPLE_DYE
+        B: GLOW_BERRIES
+
+  melon_pink_plate:
+    enabled: true
+    slot: 32
+    display-name: "&eMelon Pink Plate"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk5Y2MyYzRiOTljZmNmMjQ2OTFkZGFjN2MwOTlkZTQ5NDU1NzFiOGZmZjQ1OTgzYzk1MGRiOGRjYjNhNDhlZSJ9fX0="
+    hunger: 6
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a6+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: LIME_DYE
+        B: BOWL
+
+  melon_white_plate:
+    enabled: true
+    slot: 33
+    display-name: "&eMelon White Plate"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjEzYTczZDIzOGI1ZjczOWRlMDA1OGY4ZTM2NThmNTcwNzg0ZjVmZDI5ZmJhMzUxNzljNjY4NjdlYWM4MzAwMCJ9fX0="
+    hunger: 2
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a2+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: YELLOW_DYE
+        B: PINK_DYE
+
+  melon_yellow_plate:
+    enabled: true
+    slot: 34
+    display-name: "&eMelon Yellow Plate"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjExNWM5YjRkMjYxMTAxMWE3NzJlZmJkNmMwMmMyNDk2MDczMjYzNzVlMWI5NjNhMjUxM2Y5ODA1ZDY4Yjg1ZSJ9fX0="
+    hunger: 2
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a2+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: WHEAT
+        B: COOKIE
+
+  melon_orange_plate:
+    enabled: true
+    slot: 35
+    display-name: "&eMelon Orange Plate"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjU5YmUzYjQ0ODI4NGViZjUxZjZiN2U3NWUwYWM4N2MzYmVmOTZiOGE4ZDBjOTRlZTkyYTM1YjBjYjFiOWIzNyJ9fX0="
+    hunger: 5
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a5+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: APPLE
+        B: MELON_SLICE
+
+  apple:
+    enabled: true
+    slot: 36
+    display-name: "&eApple"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdhMzk4N2M1Y2RiMzVhYmE5YWU2ZjJlMjM0ODlhYTk2ZTA4MGU5M2ZhYzQzNWRjNjQwZjczN2I1Y2E0MDFkMyJ9fX0="
+    hunger: 3
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a3+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: SUGAR
+        B: BEETROOT
+
+  golden_apple:
+    enabled: true
+    slot: 37
+    display-name: "&eGolden Apple"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGUzNGM1MGZkY2E4ZTM2YzFlMDUwYjk2M2YyZTZlMWY3MGU0NjVlNTVjNDQzZjY4OTQ3NDQzNDA5Y2M2YTMzOCJ9fX0="
+    hunger: 3
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a3+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: COOKIE
+        B: BLUE_ICE
+
+  enchanted_golden_apple:
+    enabled: true
+    slot: 38
+    display-name: "&eEnchanted Golden Apple"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDYxMWRhMDhjYTA5ZjQ0MjY4YWYwODgxZTgzNzAzZTVkYjlmYTFhMjcxOTJhM2Y5ZDU1YjhjNzBiN2VjZTc2ZSJ9fX0="
+    hunger: 4
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a4+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: CAKE
+        B: APPLE
+
+  ramen:
+    enabled: true
+    slot: 39
+    display-name: "&eRamen"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWE2NmIxYjJmYjg0ZDgwYTYyZDdmZmU1YzBlY2I0MTVhM2UzYzk0NmM3YjliMjNkZTZlNWIxNTQwNDJkNGVkZSJ9fX0="
+    hunger: 9
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a9+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: BREAD
+        B: CARROT
+
+  creeper_cake_red:
+    enabled: true
+    slot: 40
+    display-name: "&eCreeper Cake Red"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzFhMWIzMzE3NjYyYmFjYzE3ZGE4OGU1ZTI5Y2QyZDk5ZDVjZTg4NTNjNDI3NjJjNjMxNTRiYTUzMGI1MTA0OCJ9fX0="
+    hunger: 6
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a6+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: POTATO
+        B: COCOA_BEANS
+
+  creeper_cake_gray:
+    enabled: true
+    slot: 41
+    display-name: "&eCreeper Cake Gray"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDU2NzQ2ODEyYWNjY2NmMTdkZTRhMDA0ZjM4ZTBiMmY5NWZiYWRkZTVjNjVlNTllOWM2Zjc0NWMxYzVjZjI0MyJ9fX0="
+    hunger: 6
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a6+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: BAKED_POTATO
+        B: SNOWBALL
+
+  baked_potato:
+    enabled: true
+    slot: 42
+    display-name: "&eBaked Potato"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDczZGUwYjBlZTViOWM2MWFhZWM3NjNhZTU0OGVjOTkyZDIwZDM0NWE5NzRlZWJjMjI2OWQ1MGZhZmRjM2QxYSJ9fX0="
+    hunger: 4
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a4+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: CARROT
+        B: YELLOW_DYE
+
+  ice_cream_ube:
+    enabled: true
+    slot: 43
+    display-name: "&eIce Cream Ube"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNThmYWMxMzlmNDkzZmM2MTNjZjQwZWRkMTUzMjRlMWZhYTJkOTZmZjI2YzFkNDZlNmJlYWNmOTZmNDI1Y2FhNiJ9fX0="
+    hunger: 7
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a7+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: GOLDEN_CARROT
+        B: POTATO
+
+  ice_cream_strawberry:
+    enabled: true
+    slot: 44
+    display-name: "&eIce Cream Strawberry"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQxNjIyZDkzNWU1MDEyN2ZhOTk0OGY2M2YyYWM1NDVlNjAwZmNjNDgyYjg5NTU0NmQ3M2E4Y2M1MTVjNjAxOCJ9fX0="
+    hunger: 8
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a8+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: MELON_SLICE
+        B: HONEY_BOTTLE
+
+  ice_cream_matcha:
+    enabled: true
+    slot: 45
+    display-name: "&eIce Cream Matcha"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmJmNDhhMzkwNDJjOTgwNmNlZGI2YTY0OWE2YzA1OTlkODFiNWFhZTYyYmZhY2NmMTEwMTYwZTdhYmU3YTYxMCJ9fX0="
+    hunger: 3
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a3+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: SWEET_BERRIES
+        B: GLASS_BOTTLE
+
+  ice_cream_mango:
+    enabled: true
+    slot: 46
+    display-name: "&eIce Cream Mango"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWViNzg0ZmE1ZGZmMzY0MDZiYzI1ZjNkNjg0ZDc4OTU3MTk3NGMzODFhYTM2ZWFjOWJmMmQ3NTFkMTgxYjY2OCJ9fX0="
+    hunger: 8
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a8+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: GLOW_BERRIES
+        B: PURPLE_DYE
+
+  ice_cream_cookies:
+    enabled: true
+    slot: 47
+    display-name: "&eIce Cream Cookies"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDliNWIwZTUyYzc5NTA2ZjcyOGI3N2Q1MDhhN2MxZTE3ZWFmZmM2OTMxYWZhZDFkMTBjYTZjMTJiZGY0YjFiMCJ9fX0="
+    hunger: 3
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a3+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: HONEY_BOTTLE
+        B: CAKE
+
+  ice_cream_coffee:
+    enabled: true
+    slot: 48
+    display-name: "&eIce Cream Coffee"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDdkZmI1M2I3YzEyOWE3ZDYzODQxMGUzOGE5ZTZjZTcyNjMxNzYzMmNhNzE5OGM3ZjY3Y2RjMGYxNmMxMjVmOSJ9fX0="
+    hunger: 5
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a5+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: MILK_BUCKET
+        B: SWEET_BERRIES
+
+  ice_cream_chocolate:
+    enabled: true
+    slot: 49
+    display-name: "&eIce Cream Chocolate"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWRjMjMxN2M3ZWRiNGEzZDMxZjQxMTY1MTZmYTBiMTFkNDQ2OTAzZDU4Yjc4Mjc1YjZiYmNkZmJjYzM5ZGYyOSJ9fX0="
+    hunger: 3
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a3+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: COCOA_BEANS
+        B: DRIED_KELP
+
+  ice_cream_bubblegum:
+    enabled: true
+    slot: 50
+    display-name: "&eIce Cream Bubblegum"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExNDEyMjJlYjc1MDVjNmMyYWZmNzgwOGMwMTE0NmZjOGYwZTRhMGI3ZWMwODZjMDc4NzI5OTgyNmM5OGM5YSJ9fX0="
+    hunger: 2
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a2+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: PUMPKIN_PIE
+        B: ORANGE_DYE
+
+  ice_cream_blueberry:
+    enabled: true
+    slot: 51
+    display-name: "&eIce Cream Blueberry"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTkzZWExZTA4NDY1YzlmZWIzZmRlZTY0NTIwMzE1NDZjNzUzN2UxOTg2MTI4MjIyMjczZDMxYTIxN2VjOGZjZiJ9fX0="
+    hunger: 9
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a9+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: BEETROOT
+        B: SUGAR
+
+  ice_cream_banana:
+    enabled: true
+    slot: 52
+    display-name: "&eIce Cream Banana"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4ZTBmMTg4NWY2MmYwMzc4NzdkYWUzOTlhYjEzNWVmMWQ5OGVhNTU3MjdiMmY4MzA3ZTY1YzBmODI5NmJlNSJ9fX0="
+    hunger: 4
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a4+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: DRIED_KELP
+        B: GOLDEN_CARROT
+
+  cabbage:
+    enabled: true
+    slot: 53
+    display-name: "&eCabbage"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTRhZDY2MTU2MjhkNjUwNjNmNDdjZThjNjljOTIyNGIxZDkyMmNlN2MyZGQ5NTNmN2YxMmIxMTBkMDJiYmVmNSJ9fX0="
+    hunger: 7
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a7+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: BOWL
+        B: PUMPKIN_PIE
+
+  ten_year_cake:
+    enabled: true
+    slot: 0
+    display-name: "&e10 Year Cake"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQ0NjVhOGE1NmUzYjkyYmVjMDY4YWE3ZjcwNTAwODM3ZTM4ZTIwMzM1YTlhY2M5Y2ZiMmRmNWY5MDBmNGVkNiJ9fX0="
+    hunger: 10
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a10+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: GLASS_BOTTLE
+        B: ICE
+
+  wine_glass_sweet_truffle:
+    enabled: true
+    slot: 1
+    display-name: "&eWine Glass Sweet Truffle"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjU3M2JlZjQwNDc4OTY1NmE2ZmQyMTc0OWU4NWY2OTI0Y2ZlODQ4NmFjMDZhNzgxOTRhZDc1ZjM0YzJiMTRhNSJ9fX0="
+    hunger: 4
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a4+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: PAPER
+        B: WHEAT
+
+  wine_glass_vinho_verde:
+    enabled: true
+    slot: 2
+    display-name: "&eWine Glass Vinho Verde"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIwMzUxYmMzNGYwNTQ4YjE2ZDhiMTE1MDM4NWFmMjkwZjY0Y2UyODcwYTgyMzM2YzAyZjVmYjExNDQ5NDg0NyJ9fX0="
+    hunger: 7
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a7+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: SNOWBALL
+        B: BAKED_POTATO
+
+  wine_glass_shiraz:
+    enabled: true
+    slot: 3
+    display-name: "&eWine Glass Shiraz"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2M0MmIwMTdiNmRmYTk2OWFhMGM2ZWFhOTdkNjJkMzVhNGEwZTE3NGViYjljMzQ2OWVmNjE1OGViNGYyMDgyOCJ9fX0="
+    hunger: 8
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a8+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: ICE
+        B: MILK_BUCKET
+
+  wine_glass_grenache:
+    enabled: true
+    slot: 4
+    display-name: "&eWine Glass Grenache"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg1NWFmMjllOTJkMzgwYTg3NDQyZjliMTViMDI5YmJiNTkyNmE4YTFmNDVmNWQzOWJkNWRjNThiZTYxODk3NyJ9fX0="
+    hunger: 2
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a2+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: BLUE_ICE
+        B: PAPER
+
+  wine_glass_merlot:
+    enabled: true
+    slot: 5
+    display-name: "&eWine Glass Merlot"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGE5OTk1YzM5OGFkMDJhZTQxYjMxMDlmOTljM2IwMWM4OGI0MjVjNDRkYmQzZDFiZmNlMjY2NjI3OTcwYzhhYyJ9fX0="
+    hunger: 8
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a8+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: ORANGE_DYE
+        B: LIME_DYE
+
+  wine_glass_pinot_noir:
+    enabled: true
+    slot: 6
+    display-name: "&eWine Glass Pinot Noir"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjJjMTdjNzBlNmFjYWE1Mzk5YWU5ODY2OTYxODViODQ5YWRiZGUzM2ZjMTRlMmUzYTg0MDgxMjc4Y2Y2NjM3NyJ9fX0="
+    hunger: 3
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a3+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: PINK_DYE
+        B: BREAD
+
+  wine_glass_glowberry:
+    enabled: true
+    slot: 7
+    display-name: "&eWine Glass Glowberry"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU4OWZkMDAxMzM2ZTcyM2JmN2RmNWMwM2YyZmI4MDYxOTQ2NTQ0YjljODI5YzI3NmI3ZWNhZTQ4NGFhYmY4OCJ9fX0="
+    hunger: 10
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a10+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: PURPLE_DYE
+        B: GLOW_BERRIES
+
+  wine_glass_champagne:
+    enabled: true
+    slot: 8
+    display-name: "&eWine Glass Champagne"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjJjYTBkN2Q0NTA0ZWQ5YjNkZWYxNGE0NmRlZDEzYTQ1NDY4MWEyMTlkODhmNThjMGIzYjU4MWVjYjJmYzk0NyJ9fX0="
+    hunger: 8
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a8+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: LIME_DYE
+        B: BOWL
+
+  cupcake_vanilla:
+    enabled: true
+    slot: 9
+    display-name: "&eCupcake Vanilla"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTk5NGQ1YjYyN2ZiZTk5NWMyZTRmZTMxMjEzNTliMWE2NjczZmEyYTg5ODc5N2Y3NmFkYjg2ZGZlYzc0NGE4NyJ9fX0="
+    hunger: 2
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a2+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: YELLOW_DYE
+        B: PINK_DYE
+
+  cupcake_chocolate:
+    enabled: true
+    slot: 10
+    display-name: "&eCupcake Chocolate"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTViMDBjNmFmYjAxOGM1YmIwNTFiN2YyZWQxOTZkMDlhM2NkOWQ5NTMyOTM0ODg3ODA2OWVlOWRmNTg2NDVjNyJ9fX0="
+    hunger: 7
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a7+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: WHEAT
+        B: COOKIE
+
+  cupcake_strawberry:
+    enabled: true
+    slot: 11
+    display-name: "&eCupcake Strawberry"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTk3YTdiMDFiNjUyNjk0ZmYzZDMzMjI3M2E2MGVjMTRhZDk0NGY5ZWJlYzAxYmVkZWVmNmU5YjEyOGQxOTdlZCJ9fX0="
+    hunger: 10
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a10+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: APPLE
+        B: MELON_SLICE
+
+  cake:
+    enabled: true
+    slot: 12
+    display-name: "&eCake"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFjNGRjZjQ1NWZlY2M1MDgzOTM1OTRiNjIwNDg5MmIwNGU0MjZlMDg0ZTM2MjJhOWQzZTQ3MTQ3MzJlNDhmZSJ9fX0="
+    hunger: 8
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a8+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: SUGAR
+        B: BEETROOT
+
+  garlic_bread:
+    enabled: true
+    slot: 13
+    display-name: "&eGarlic Bread"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzgzZTQ3YTI2YjExZTlhYzczYTkwODc0ZjE4NzkxNjE1MTZlMGNlZWYxODgzNmYxNDRkZmQwODExOTQ5OTcyOSJ9fX0="
+    hunger: 3
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a3+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: COOKIE
+        B: BLUE_ICE
+
+  candycomb:
+    enabled: true
+    slot: 14
+    display-name: "&eCandycomb"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDcwOWI5Y2UxYzE2OGFjZGI5NDYwZWJlNTA2ZTkzYTRiMDIzMjNkNzIxZmNhZWU3OGRmMjQ0YWY0ZjM3YjE3OSJ9fX0="
+    hunger: 6
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a6+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: CAKE
+        B: APPLE
+
+  exalted_lushlilac_bonbon:
+    enabled: true
+    slot: 15
+    display-name: "&eExalted Lushlilac Bonbon"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFlZDFhMjFhZTk2YmVmNDExZTMzZjFkNmM2ZmMyY2FmMTY1OWM4OTE0ODc3MTBlNjhlYTlhZTNhZWI3ZDhiNSJ9fX0="
+    hunger: 6
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a6+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: BREAD
+        B: CARROT
+
+  prime_lushlilac_bonbon:
+    enabled: true
+    slot: 16
+    display-name: "&ePrime Lushlilac Bonbon"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzczYjQ2NWI0MWZhY2ZjMTg4NGFmMDNmNDUzMDFjMjZlYzFlNmQ2Zjk2YmZjYTQ2NGY5NTg2ODBhZWEyY2FlZCJ9fX0="
+    hunger: 9
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a9+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: POTATO
+        B: COCOA_BEANS
+
+  lushlilac:
+    enabled: true
+    slot: 17
+    display-name: "&eLushlilac"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDkzMGUxNjBiODM0MDVjM2IzYjU4MWIwZGFiZjg5NTBkNjUzN2YzMTc2YWEwYTNkODkwOGEyN2FhZTFmN2ZlYiJ9fX0="
+    hunger: 8
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a8+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: BAKED_POTATO
+        B: SNOWBALL
+
+  alfajor:
+    enabled: true
+    slot: 18
+    display-name: "&eAlfajor"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdhNGQ2MDAzMjAwYzVhYmI5Y2JkYTI2ODE0MzA5NzgxMGI4NTE5OWViZGJkYTU4NmUyZTY5NTIzYWNhMjUxMiJ9fX0="
+    hunger: 3
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a3+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: CARROT
+        B: YELLOW_DYE
+
+  pink_cheese:
+    enabled: true
+    slot: 19
+    display-name: "&ePink Cheese"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQxMmM1ZjYxZjJjYzNiODAzNjYwN2NiZTAzMjA2YTdiZDgyOGUxNzE1OGFhNTIyMjQ5MzY5ZDVhOTViNmY2NiJ9fX0="
+    hunger: 10
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a10+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: GOLDEN_CARROT
+        B: POTATO
+
+  carrotdrop_candy:
+    enabled: true
+    slot: 20
+    display-name: "&eCarrotdrop Candy"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDdkYzkyNmYwYTFkODM0ZDE4MjE3MDdjZDZmMjE3NGY4YjFiNWQwMTk3NTYzMjIyZTM0ZThlNjI4MTI0ODQ0MSJ9fX0="
+    hunger: 7
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a7+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: MELON_SLICE
+        B: HONEY_BOTTLE
+
+  macaron:
+    enabled: true
+    slot: 21
+    display-name: "&eMacaron"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTE2YzI2ODhiMWVhMTYwMjQwODJiYjYyZTNmMWRlYjM0NzZkYzY2ZjUwMzcyZTRiYTU4YjdkYWMyYjhmZTdmZiJ9fX0="
+    hunger: 5
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a5+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: SWEET_BERRIES
+        B: GLASS_BOTTLE
+
+  second_burger:
+    enabled: true
+    slot: 22
+    display-name: "&eSecond Burger"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDUxMzdmYzBjZDUxMjAyNjcyMzgyYmZhZTAxZmViM2UxZTJiNzMxMDdlOThkMmM2YzhmNzE5ZjFkYTUzMGU2OCJ9fX0="
+    hunger: 2
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a2+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: GLOW_BERRIES
+        B: PURPLE_DYE
+
+  gingerbread_man:
+    enabled: true
+    slot: 23
+    display-name: "&eGingerbread Man"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc4M2VlNDAyOGExNWUzYjE5NzBjNmMzNjRjNTdhMzk5YzRkZmU0YzI4MjA1ODc1OTM0MjI5NmI1MzJhZGExZiJ9fX0="
+    hunger: 10
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a10+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: HONEY_BOTTLE
+        B: CAKE
+
+  orange_cake_slice:
+    enabled: true
+    slot: 24
+    display-name: "&eOrange Cake Slice"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWY4MzdjZGRlNWJkYmFkNGZjZWYyYzE5ODgyZTE0MTY4YjU4OTkwNGU0MGJjMzA5Y2VhZTIwYzI2NzMwZTc4In19fQ=="
+    hunger: 6
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a6+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: MILK_BUCKET
+        B: SWEET_BERRIES
+
+  pepsi_cola_twist:
+    enabled: true
+    slot: 25
+    display-name: "&ePepsi Cola Twist"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDdmMTBmZTBiMmJmMzA0M2FlNTk2ZGZmYWRiOWFiOWRhZmE1YWYxNWVmNzg5ODBlMjcxNTQzMzY5M2EwZTIyMiJ9fX0="
+    hunger: 3
+    saturation: 4.8
+    amount: 1
+    lore:
+      - ''
+      - '&8You can only eat this if'
+      - '&8your player is hungry'
+      - ''
+      - '&a3+ &cHunger'
+      - ''
+      - '&eRight Click To Eat'
+    recipe:
+      enabled: true
+      shape:
+        - ' A '
+        - 'ABA'
+        - ' A '
+      ingredients:
+        A: COCOA_BEANS
+        B: DRIED_KELP

@@ -1,0 +1,1 @@
+{"parent":"ysbp:transfer","display":{"icon":{"id":"minecraft:chest"},"title":"Collector","description":"Own 5 or more backpacks.","frame":"challenge","show_toast":true,"announce_to_chat":false,"hidden":false},"criteria":{"done":{"trigger":"minecraft:impossible"}}}
