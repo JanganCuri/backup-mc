@@ -1,5 +1,5 @@
 #Villager Info
-output-enabled: true
+output-enabled: false
 #Information Toggles
 #True to enable the information to display when requested, false for it not to display
 toggles:
