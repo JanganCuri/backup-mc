@@ -1,0 +1,222 @@
+debug:
+  enabled: false
+
+features:
+  datapacks:
+    enabled: true
+  crafting_table:
+    enabled: true
+  furnace:
+    enabled: true
+  inventory_2x2:
+    enabled: true
+  mini_blocks:
+    enabled: true
+  heads:
+    enabled: true
+  custom_items:
+    enabled: true
+  disenchant:
+    enabled: true
+
+integrations:
+  vane:
+    enabled: true
+
+clean_namespaces:
+- teakstweaks
+
+datapacks:
+  enabled: true
+  world_name: ''
+  reload_data: false
+  all_mob_heads_patch:
+    enabled: true
+    ordinary:
+      unenchanted_chance: 0.05
+      base_chance: 0.05
+      per_looting_level: 0.02
+    rare:
+      unenchanted_chance: 0.08
+      base_chance: 0.08
+      per_looting_level: 0.02
+    strong:
+      unenchanted_chance: 0.12
+      base_chance: 0.12
+      per_looting_level: 0.03
+  source_paths:
+  - mini-blocks-v1-1-1-mc-1-21.zip
+  - AllMobHeads_V10.20.zip
+  verify_recipes:
+  - mini_blocks:dropper
+
+resource_pack:
+  enabled: false
+  required: false
+  join_delay_ticks: 40
+  prompt: '&bСкачать серверный ресурс-пак?'
+  url: https://drive.usercontent.google.com/uc?id=1BG3DTrZQPYAwVrHChfcxT-6I0F9u8wXb&export=download
+  sha1: ''
+
+stonecutter:
+  enabled: true
+  modules:
+    wood: true
+    bamboo: true
+    sand_families: true
+    blackstone_family: true
+    to_dirt: true
+    nether_extras: true
+    mud_extras: true
+    mossy_cobble_family: true
+    stone_family: true
+    glass_panes: true
+    blackstone_as_stone: false
+  to_dirt_variants:
+    grass_block: true
+    coarse_dirt: true
+    dirt_path: true
+    rooted_dirt: true
+    podzol: true
+    mycelium: true
+  strict_reverse:
+    enabled: true
+    slab_to_block_cost: 2
+    slab_to_plank_cost: 2
+    planks_to_log_cost: 4
+    planks_to_wood_cost: 4
+    planks_to_stripped_wood_cost: 4
+    planks_to_stripped_wood_enabled: false
+  balance:
+    wood:
+      log_to_planks: 4
+      wood_to_planks: 4
+      planks_to_slabs: 2
+      planks_to_stairs: 1
+      planks_to_fences: 1
+      planks_to_fence_gates: 1
+      planks_to_doors: 1
+      planks_to_trapdoors: 1
+      planks_to_buttons: 2
+      planks_to_pressure_plates: 1
+      planks_to_signs: 1
+      planks_to_hanging_signs: 1
+      planks_to_boats: 1
+      log_as_root: true
+    bamboo:
+      bamboo_to_planks: 2
+      bamboo_to_block_enabled: true
+      bamboo_to_block_cost: 2
+      mosaic_slab_to_mosaic_enabled: true
+      mosaic_slab_to_mosaic_cost: 2
+    sand:
+      block_cost: 4
+
+# Legacy keys from old versions are still supported in code, but the main
+# stonecutter configuration now lives in the block above.
+modules:
+  crafting: true
+  furnace: true
+
+crafting:
+  cobweb: true
+  chainmail: true
+  horse_armor: true
+  saddle: true
+  leather_from_rotten_flesh: true
+  name_tag: true
+  amethyst_block_to_shards: true
+  wool_to_string: true
+  string_to_wool: true
+  ice: true
+  quartz_block_to_quartz: true
+  powered_rail_copper: true
+  dispenser_to_dropper_bow: false
+  dropper_bow_to_dispenser: true
+  slab_conversions: true
+  stair_conversions: true
+  flint_gravel: true
+  coral_conversions: true
+  coal_to_dye: true
+  bread: true
+  paper: true
+  bowl: true
+  bucket: true
+  suspicious_stew: true
+
+furnace:
+  raw_ore_blocks: true
+  rotten_flesh_to_leather: true
+  crying_obsidian_to_obsidian: true
+  powder_to_glass: true
+  powder_to_concrete: false
+
+mechanics:
+  piston:
+    enabled: true
+  
+  mossy_cobblestone_shears:
+    enabled: true
+  
+  seeds:
+    enabled: true
+    radius: 1
+  
+  phantom_membrane:
+    enabled: true
+    phantom_chance: 1.0
+    bat_enabled: true
+    bat_chance: 0.1
+  
+  silence_tag:
+    enabled: true
+    names:
+    - Silence Me
+    - Тишина
+  
+  disenchant:
+    enabled: true
+    cost: 0
+  
+  anvil_unlimited:
+    enabled: true
+    max_cost: 39
+  
+  name_tag_drop:
+    enabled: true
+    chance: 1.0
+  
+  cauldron:
+    enabled: true
+    delay: 60
+    lower_water: true
+    sounds: true
+    sound: BLOCK_LAVA_EXTINGUISH
+    sound_volume: 0.6
+    sound_pitch: 1.1
+    particles: true
+    particle: WATER_DROP
+    particle_count: 20
+  
+  mini_blocks:
+    enabled: true
+    anvil_cost: 8
+    villager_chance: 0.12
+    structure_chance: 0.08
+    loot_tables:
+    - simple_dungeon
+    - abandoned_mineshaft
+    - stronghold
+    - ancient_city
+    - bastion
+    - fortress
+    - nether_bridge
+  
+  armored_elytra:
+    enabled: true
+  
+  ender_backpack:
+    enabled: true
+  
+  silk_touch_budding_amethyst:
+    enabled: true

@@ -101,7 +101,7 @@ stonecutter:
       planks_to_pressure_plates: 1
       planks_to_signs: 1
       planks_to_hanging_signs: 1
-      planks_to_boats: 1
+      planks_to_boats: 0
       log_as_root: true
     bamboo:
       bamboo_to_planks: 2
