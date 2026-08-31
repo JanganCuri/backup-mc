@@ -2,6 +2,6 @@ unsnap-on-teleport: true
 villager-teleport: true
 teleport-threshold: 50.0
 entity-god: false
-leashable: true
+leashable: false
 allow-lead-passing: true
 allow-fence-connect: true
