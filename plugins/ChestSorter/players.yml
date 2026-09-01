@@ -46,3 +46,8 @@
   has-seen-welcome: true
   default-sort-type: NAME
   default-sort-order: ASC
+bdcc4526-2235-3666-8c89-b312cc7cd58a:
+  enabled: true
+  has-seen-welcome: true
+  default-sort-type: NAME
+  default-sort-order: ASC
