@@ -134,7 +134,7 @@ crafting:
   dispenser_to_dropper_bow: false
   dropper_bow_to_dispenser: true
   slab_conversions: true
-  stair_conversions: false
+  stair_conversions: true
   flint_gravel: true
   coral_conversions: true
   coal_to_dye: true
