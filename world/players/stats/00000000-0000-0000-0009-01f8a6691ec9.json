@@ -1,27 +1,61 @@
 {
   "stats": {
     "minecraft:custom": {
-      "minecraft:time_since_rest": 1046,
-      "minecraft:walk_one_cm": 6576,
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 10696,
+      "minecraft:walk_one_cm": 35586,
       "minecraft:leave_game": 1,
-      "minecraft:damage_taken": 305,
-      "minecraft:play_time": 8760,
-      "minecraft:jump": 136,
-      "minecraft:time_since_death": 1026,
-      "minecraft:sprint_one_cm": 50652,
-      "minecraft:fall_one_cm": 5450,
-      "minecraft:total_world_time": 8760,
-      "minecraft:fly_one_cm": 32988,
-      "minecraft:crouch_one_cm": 6,
-      "minecraft:walk_on_water_one_cm": 674,
-      "minecraft:sneak_time": 40,
-      "minecraft:deaths": 1
+      "minecraft:walk_under_water_one_cm": 382,
+      "minecraft:damage_taken": 753,
+      "minecraft:damage_dealt": 169,
+      "minecraft:play_time": 20685,
+      "minecraft:jump": 306,
+      "minecraft:time_since_death": 10676,
+      "minecraft:sprint_one_cm": 118208,
+      "minecraft:open_chest": 7,
+      "minecraft:inspect_hopper": 1,
+      "minecraft:fall_one_cm": 8934,
+      "minecraft:swim_one_cm": 1278,
+      "minecraft:total_world_time": 20685,
+      "minecraft:fly_one_cm": 57201,
+      "minecraft:walk_on_water_one_cm": 4051,
+      "minecraft:crouch_one_cm": 163,
+      "minecraft:sneak_time": 131,
+      "minecraft:deaths": 2
+    },
+    "minecraft:killed_by": {
+      "minecraft:skeleton": 1
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_pickaxe": 1,
+      "minecraft:diamond_spear": 1,
+      "minecraft:diamond_sword": 1
     },
     "minecraft:picked_up": {
-      "minecraft:leaf_litter": 3
+      "minecraft:warped_fungus": 1,
+      "minecraft:leaf_litter": 3,
+      "minecraft:dirt": 1,
+      "minecraft:crimson_fungus": 1,
+      "minecraft:cooked_beef": 34,
+      "minecraft:diamond": 9,
+      "minecraft:cornflower": 1,
+      "minecraft:gold_nugget": 3,
+      "minecraft:dark_oak_log": 1
+    },
+    "minecraft:used": {
+      "minecraft:cooked_beef": 2,
+      "minecraft:diamond_pickaxe": 3,
+      "minecraft:diamond_spear": 2,
+      "minecraft:diamond_sword": 2
     },
     "minecraft:mined": {
-      "minecraft:leaf_litter": 1
+      "minecraft:nether_gold_ore": 1,
+      "minecraft:warped_fungus": 1,
+      "minecraft:cornflower": 1,
+      "minecraft:crimson_fungus": 1,
+      "minecraft:leaf_litter": 1,
+      "minecraft:netherrack": 2,
+      "minecraft:grass_block": 1
     }
   },
   "DataVersion": 4903
