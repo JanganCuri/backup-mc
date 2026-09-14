@@ -71,3 +71,8 @@ bdcc4526-2235-3666-8c89-b312cc7cd58a:
   has-seen-welcome: true
   default-sort-type: NAME
   default-sort-order: ASC
+905ba850-1319-3d77-81ff-9647d6d4b13a:
+  enabled: true
+  has-seen-welcome: true
+  default-sort-type: NAME
+  default-sort-order: ASC
